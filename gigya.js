@@ -16,7 +16,7 @@ function ShowLoginScreen()
 callback: doCallback
 };
 
-fidm.saml.continueSSO(params);
+gigya.fidm.saml.continueSSO(params);
             }
         });
 

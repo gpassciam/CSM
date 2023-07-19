@@ -1,13 +1,5 @@
 function ShowLoginScreen()
 {
-    gigya.accounts.showScreenSet({
-            screenSet: 'csmservicenow-dev-RegistrationLogin',
-            startScreen: 'gigya-login-screen',
-            //customLang: customLangParams,
-            containerID: 'LoginScreen'
-            
-        });
-
     gigya.socialize.addEventHandlers({
             onLogin: function() {
             alert("hello");
@@ -20,6 +12,15 @@ gigya.fidm.saml.continueSSO(params);
             }
         });
 
+    gigya.accounts.showScreenSet({
+            screenSet: 'csmservicenow-dev-RegistrationLogin',
+            startScreen: 'gigya-login-screen',
+            //customLang: customLangParams,
+            containerID: 'LoginScreen'
+            
+        });
+
+    
     function doCallback(response) {
 alert(JSON.stringify(response));
 }

@@ -7,4 +7,21 @@ function ShowLoginScreen()
             containerID: 'LoginScreen'
             
         });
+
+    gigya.socialize.addEventHandlers({
+            onLogin: function() {
+            alert("hello");
+                var params = {
+//set up the callback to handle the response
+callback: doCallback
+};
+
+fidm.saml.continueSSO(params);
+            }
+        });
+
+    function doCallback(response) {
+alert(JSON.stringify(response));
+}
+
 }

@@ -9,8 +9,7 @@ spName: 'CSMServiceNow',
 callback: doCallback
 };
 
-gigya.fidm.saml.initSSO(params);
-
+gigya.fidm.saml.continueSSO(params);
             }
         });
 

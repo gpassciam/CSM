@@ -5,7 +5,7 @@ function ShowLoginScreen()
             alert("hello");
                 var params = {
 //set up the callback to handle the respon
-spName: 'CSMServiceNow'
+spName: 'CSMServiceNow',
 callback: doCallback
 };
 

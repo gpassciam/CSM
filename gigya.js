@@ -10,7 +10,6 @@ function ShowLoginScreen()
         });
 
     
-    
 }
 function ShowForgotPassScreen()
 {
@@ -26,3 +25,19 @@ function ShowForgotPassScreen()
     
     
 }
+function ShowResetPassScreen()
+{
+    
+    gigya.accounts.showScreenSet({
+            screenSet: 'csmservicenow-dev-RegistrationLogin',
+            startScreen: 'gigya-reset-password-screen',
+            //customLang: customLangParams,
+            containerID: 'ShowResetPassScreen'
+            
+        });
+
+    
+    
+}
+
+

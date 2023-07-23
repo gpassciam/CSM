@@ -12,3 +12,32 @@ function ShowLoginScreen()
     
     
 }
+function ShowForgotPassScreen()
+{
+    
+    gigya.accounts.showScreenSet({
+            screenSet: 'csmservicenow-dev-RegistrationLogin',
+            startScreen: 'gigya-forgot-password-screen',
+            //customLang: customLangParams,
+            containerID: 'ShowForgotPassScreen'
+            
+        });
+
+    
+    
+}
+function ShowForgotPassScreen()
+{
+    
+    gigya.accounts.showScreenSet({
+            screenSet: 'csmservicenow-dev-RegistrationLogin',
+            startScreen: 'gigya-forgot-password-screen',
+            //customLang: customLangParams,
+            containerID: 'ShowForgotPassScreen'
+            
+        });
+
+    
+    
+}
+
